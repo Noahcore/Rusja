@@ -1,0 +1,83 @@
+	
+hr{
+background-color:blue;
+height:1px;
+border:0px;
+}
+
+body{
+background-image:url(bildes/background.png) 
+}
+
+
+.A {
+background-image:url(bildes/gaming_computers.png);
+height:276px;
+width:800px;
+margin:0px auto;
+}
+
+
+
+.C {
+width:800px;
+margin:auto;
+}
+
+.D {
+background:red;
+width:780px;
+margin:0px auto;
+color:#ffffff;
+padding:10px;
+}
+
+img {
+height:100px;
+width:100px;
+border:4px;
+padding:10px;
+}
+/*--------Izvelne2 dizaina noformçjums----------*/
+
+.galv {
+background:red;
+padding:10px;
+}
+
+.galv  li{
+list-style-type:none;  
+display:inline; 
+}
+
+.galv li a{
+text-decoration:none; 
+background:red;
+color:#ffffff; 
+padding:10px; 
+}
+
+.galv li a:hover{
+padding:20px;
+}
+/*--------Izvelne2 dizaina noformçjuma beigas----------*/
+
+
+.epasts {
+color:#000000;
+padding:40px;
+background-color:#ffa500;
+}
+
+
+#izvelne  li{
+list-style-type:none; 
+display:inline; 
+}
+
+#izvelne li a{
+text-decoration:none; 
+background:#ffa500;
+color:#ffffff; 
+padding:10px; 
+}

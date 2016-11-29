@@ -1,0 +1,146 @@
+<!DOCTYPE html PUBLIC >
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<link rel="stylesheet" type="text/css" href="noformejums.css" />
+<link href="css/lightbox.css" rel="stylesheet" /> 
+<link rel="SHORTCUT ICON" href="bildes/images.ico"/>
+<title>Gaming computers</title>
+<script src="js/jquery-1.7.2.min.js"></script>
+<script src="js/lightbox.js"></script>
+<script type="text/javascript">
+      $("document").ready(function() {
+			$('.D div[id^=tab]').hide(); //Visi div, kuriem ir piešķirts id un tā sākums ir tab, un kuri atrodas strap tagu ar klasi D ir paslēpti
+			$('.D div[id^=tab]:first').show(); //Tiek atrasts pirmais div ar id, kura sākums ir, un kurš atrodas starp tagu ar klasi D
+			$('#tabs ul li a').click(function(){ //funkcija, kura tiek izsaukta uz pogas klišķi
+				var currentTab = $(this).attr('href'); //tiek atrast konkrētais tabs
+				$('.D div[id^=tab]').hide(); //tiek paslēpti tabi
+				$(currentTab).show();	//tiek parādīts konkrētais tabs
+			});
+			
+			
+			$('.D div[id=tab4] div[id=aizvs] div[id^=izv]').hide(); 
+			$('.D div[id=tab4] div[id=aizvs] div[id^=izv]:first').show(); 
+			$('#izvelne li a').click(function(){ 
+				var currentTab = $(this).attr('href'); 
+				$('.D div[id=tab4] div[id=aizvs] div[id^=izv]').hide(); 
+				$(currentTab).show();	
+			});
+
+		});
+    </script>
+		
+</head>
+<body>
+<div class = "A"></div>
+<div class = "C">
+			<div id="tabs">
+   <ul class = "galv">
+     <li><a href="#tab1">Sākums</a></li>
+     <li><a href="#tab2">Galerija</a></li>
+     <li><a href="#tab3">Kontakti</a></li>     
+	 <li><a href="#tab4">Anketa</a></li>
+	 <li><a href="#tab5">Par mani</a></li>
+   </ul>
+   </div>
+</div>
+<div class = "D">
+	<!---------SADAĻAS SĀKUMS DIV ------> 
+   <div id="tab1">
+		<h3>Sākums</h3>
+		<div style = "padding:20px;">
+		A gaming computer is a personal computer designed for playing computationally demanding video games. Gaming computers are very similar to conventional PCs, with the main difference being the addition of gaming-oriented components such as one or more high-end video cards. Gaming computers are often associated with enthusiast computing due to an overlap in interests. However, while a gaming PC is built to achieve performance for actual gameplay, enthusiast PCs are built to maximize performance, using games as a benchmark. The difference between the two carries a large discrepancy in the cost of the system. Whereas enthusiast PCs are high-end by definition, gaming PCs can be subdivided into low-end, mid-range, and high-end segments. Contrary to the popular misconception that PC gaming is inextricably tied to high-priced enthusiast computing, video card manufacturers earn the bulk of their revenue from their low-end and mid-range offerings.
+		</div>
+   </div>
+   <!---------SADAĻAS SĀKUMS DIV ------> 
+   <!---------SADAĻAS GALERIJAS DIV ------> 
+   <div id="tab2">
+		<h3>Galerija</h3>
+		<br/><hr/>
+		<a href="bildes/Rrose.png" rel="lightbox[html]"><img src = "bildes/Rrose.png"/></a>
+		<a href="bildes/Grose.jpg" rel="lightbox[html]"><img src = "bildes/Grose.jpg"/></a>
+		<a href="bildes/Brose.jpg" rel="lightbox[html]"><img src = "bildes/Brose.jpg"/></a>
+		<a href="bildes/Frose.png" rel="lightbox[html]"><img src = "bildes/Frose.png"/></a>
+		<br/><hr/>
+     </div>
+   <!---------SADAĻAS GALERIJAS DIV ------> 
+   <!---------SADAĻAS KONTAKTI DIV ------> 
+   <div id="tab3">
+		 <h3>Kontakti</h3>
+		 <ul>
+		 	<li>Ruslans Nazarovs</li>
+		 	<li>Noahcore95@gmail.com</li>
+		 	<li>Kurss: EDP1-2</li>
+		 	<li>Esmu labs :D</li>
+		 </ul>
+		
+   </div>
+	<!---------SADAĻAS KONTAKTI DIV ------> 
+	<!---------SADAĻAS Anketa DIV ------> 
+	<div id="tab4">
+		<h3>Anketa</h3>
+		<form>
+  			<fieldset>
+    			<legend>Contacts</legend>
+    			<p><label for="name">Name <em>* </em></label><input type="text" name="name"></p>
+    			<p><label for="Username">Username<em>* </em></label><input type="text" name="Username"></p>
+  			</fieldset>
+		</form>
+		<form action="script.cgi" method="post">
+   			<fieldset>
+				<legend>Gender</legend>
+      			<label for="male">Male</label>
+      			<input type="radio" name="sex" id="male" />
+      			<br />
+      			<label for="female">Female</label>
+      			<input type="radio" name="sex" id="female" />
+   			</fieldset>
+		</form>
+		<label for="comments">What type of a computer do you have?</label>
+		<textarea id="comments"></textarea>
+		<p><input type="submit" value="submit"></p>
+  
+	</div>	
+ 	<!---------SADAĻAS Anketa DIV ------> 
+ 	<!---------SADAĻAS Par mani DIV ------>
+ 	<div id="tab5">
+ 		<h3>Par mani</h3>
+ 			<ul class= "persona">
+     			<li>Personas dati
+     				<ul>
+     					<li>Ruslans Nazarovs</li>
+     					<li>(+371)29837434</li>
+     					<li>noahcore95@gmail.com</li>
+     				</ul>
+     			</li>
+    		 	
+   			</ul>
+   			<ul>
+     			<li>Darba pieredze
+     				<ul>
+     					<li><em>pārdevejs/kasieris-</em> SIA "RIMI LIELUPE"</li>
+     				</ul>
+     			</li>
+   			</ul>
+   			<ul>
+     			<li>Izglītība
+     				<ul>
+     					<li>Jūrmalas pilsētas Kauguru vidusskola, Jūrmala (Latvija)</li>
+     				</ul>
+     			</li>
+   			</ul>
+   			<ul>
+     			<li>Dzimtā valoda
+     				<ul>
+     					<li>Krievu</li>
+     				</ul>
+     			</li>
+    		 	
+   			</ul>
+ 	</div>
+ 	<!---------SADAĻAS Par mani DIV ------>
+ </div>
+
+
+</body>
+</html>
